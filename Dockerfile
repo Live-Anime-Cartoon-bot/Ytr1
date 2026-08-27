@@ -1,5 +1,3 @@
-#KSBOTOFFICALS
-#DEVELOPER
 FROM python:3.8-slim-buster
 WORKDIR /app 
 COPY requirements.txt requirements.txt
@@ -8,4 +6,4 @@ RUN apt update && apt upgrade -y
 RUN apt install ffmpeg -y 
 COPY . . 
 
-CMD python3 bot.pyc
+CMD python3 bot.py
